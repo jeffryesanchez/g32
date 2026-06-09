@@ -7,179 +7,190 @@
 }
 
 body {
-height: 1500px;
-width: 1000px;
+min-height: 1500px;
 display: flex;
-gap: 20px;
 flex-direction: column;
 font-family: 'Bai Jamjuree';
 align-items: center;
 }
 
 header {
-    width: 1000px;
+    width: 100%;
+    height: 300px;
     display: flex;
     flex-direction: column;
-}
-
-main {
-    width: 100%;
-}
-.description p {
-    font-size: 12px;
+    justify-content: center;
+    background-image: url(../clipboard-landing-page-master/images/bg-header-desktop.png);
+    background-size: 100%;
+    background-repeat: no-repeat; 
 }
 
 #logo {
-    height: auto;
-    align-self: center;
-    margin-top: 80px;
-    margin-bottom: 20px;
+    margin: 30px auto;
+}
+main {
+    width: 100%;
+    display: flex;
 }
 
-#title {
-    font-size: 30px;
+header {
     text-align: center;
-    margin-bottom: 15px;
-    font-family: 'Bai Jamjuree';
 }
 
-.description {
-    font-size: 30px;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 10px;
-    color: hsl(20, 11%, 66%);
+h1 {
+    font-size: 26px;
+    font-weight: 550;
+    color: hsl(210, 10%, 33%);
 }
 
+#descriptionTitle p {
+    font-size: 11px;
+    margin-top: 11px;
+    color: hsl(201, 11%, 66%);
+    line-height: 1.4;
+    margin-bottom: 28px;
+}
 .buttons {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     border-radius: 50px;
     cursor: pointer;
     font-size: 8px;
 }
 
-.iOS {
-    background-color: hsl(171, 66%, 44%);
+.iOS, .Mac {
+    border: 0;
     padding: 9px 20px;
     border-radius: 30px;
     color: white;
-    border-color: hsl(171, 66%, 44%);
     cursor: pointer;
     font-family: 'Bai Jamjuree';
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 10px;
+    font-weight: 500;
+    box-shadow: 2px 2px 10px -4px grey;
 }
 .Mac {
     background-color: hsl(233, 100%, 69%);
-    padding: 9px 20px;
-    border-radius: 30px;
-    color: white;
-    border-color: hsl(233, 100%, 69%);
-    cursor: pointer;
-    font-family: 'Bai Jamjuree';
-    font-size: 12px;
-    font-weight: bold;
+    border-bottom: 2px solid;
+    border-color: hsl(233, 46%, 49%);
 }
 
-.titles2 {
-    font-size: 22px;
-    text-align: center;
-    margin-top: 70px;
-    margin-bottom: 14px;
-    color: hsl(210, 10%, 33%);
+.iOS {
+    background-color: hsl(171, 33%, 58%);
+    border-bottom: 2px solid;
+    border-color: hsl(171, 24%, 47%);
+}
+
+.Mac:hover {
+    background-color: #8896FF;
+}
+.iOS:hover {
+    background-color: #5DCCBB;
 }
 
 main {
     display: flex;
     flex-direction: column;
+    margin-top: 70px;
 }
+
 #card1 {
     height: auto;
+    width: 100%;
     display: flex;
-    gap: 100px;
-    position: 50%;
-    margin-top: 20px;
+    justify-content: center;
+    margin-top: -15px;
+    margin-left: -120px;
+    gap: 62px;
 }
 
-.description {
-    font-size: 16px;
-    margin-bottom: 30px;
-    line-height: 1.5;
-    color: hsl(201, 11%, 66%);
+#macscreen {
+    background-color: red;
+}
+#macscreen img {
+    width: 450px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
 }
 
+h2 {
+    font-size: 22px;
+    font-weight: 550;
+    color: hsl(210, 10%, 33%);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#features {
+    text-align: left;
+    align-content: center;
+    margin-top: -18px;
+}
 .description2 {
     font-size: 10px;
     margin-bottom: 60px;
-    text-align: left;
-    color: hsl(201, 11%, 66%);
-    line-height: 1.8
-}
-
-.featuresTitle {
-    font-size: 14px;
-    text-align: start;
-    margin-bottom: 5px;
-    color: hsl(210, 10%, 33%);
-}
-
-#features3 {
-    margin-top: 50px;
-    text-align: left;
-}
-
-#description3 p {
-    font-size: 10px;
-    margin-bottom: 30px;
     text-align: center;
     color: hsl(201, 11%, 66%);
-    line-height: 1.8
+    line-height: 1.8;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 550;
+    margin-bottom: 5px;
+}
+
+.description3 {
+    font-size: 9px;
+    margin-bottom: 30px;
+    text-align: left;
+    color: hsl(201, 11%, 66%);
+    line-height: 2;
 }
 
 #card2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 27px;
 }
 
 #phonetablet {
-    margin-top: 35px;
+    margin-top: 5px;
     margin-bottom: 50px;
 }
 
-#titles3 {
-font-size: 22px;
-text-align: center;
-margin-bottom: 14px;
-color: hsl(210, 10%, 33%);
-}
-
 #featureswithimages {
+    width: 800px;
     display: flex;
-    width: 1000px;
     justify-content: space-evenly;
-    align-items: center;
+    margin: auto;
+    margin-top: -15px;
 }
 
 .examples {
     display: flex;
     flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.examples div {
+    align-self: center;
+    margin-bottom: 30px;
+    height: 30px;
+    width: 30px;
+    align-content: center;
 }
 
 .examples img {
-    align-self: center;
-    margin-bottom: 30px;
+    width: 100%;
 }
 
-h3 {
-    font-size: 14px;
+.examples h3 {
     text-align: center;
-    margin-bottom: 5px;
-    color: hsl(210, 10%, 33%);
+    margin-bottom: 12px;
 }
-
 .examples p {
     font-size: 10px;
     margin-bottom: 60px;
@@ -189,36 +200,19 @@ h3 {
 }
 #companies {
     display: flex;
-    width: 100%;
+    width: 1275px;
     height: 40px;
-    justify-content: center;
-    gap: 20px;
+    gap: 65px;
     margin-top: 50px;
-    justify-content: space-evenly
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 20px;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 95px;
 }
 
 #companies img {
-    width: 15%;
-    aspect-ratio: inherit;
+    width: 7%;
+    aspect-ratio: 3/2;
     object-fit: contain;
-}
-
-#titleslast {
-    margin-top: 80px;
-    font-size: 22px;
-    text-align: center;
-    margin-bottom: 14px;
-    color: hsl(210, 10%, 33%);
-}
-
-#descriptionlast {
-    font-size: 10px;
-    text-align: center;
-    color: hsl(201, 11%, 66%);
-    line-height: 1.8;
 }
 
 #buttonslast {
@@ -226,7 +220,7 @@ h3 {
 }
 footer {
     width: 100%;
-    height: 1000px;
+    height: auto;
     background-color: rgb(245, 245, 241);
     display: flex;
     gap: 20px;
