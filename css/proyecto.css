@@ -270,6 +270,10 @@ footer {
     font-style: normal;
 }
 
+footer .hyperlinks:nth-child(3){
+    justify-content: start;
+    margin-top: 27px;
+}
 #socialMedia {
     display: flex;
     justify-content: center;
@@ -280,4 +284,64 @@ footer {
 
 #socialMedia a:hover img {
     filter:#59BDAA;
+}
+.desktop-break {
+  display: inline;
+}
+.mobile-break {
+  display: none;
+}
+
+@media (width <= 375px) {
+    #card1, body, #featureswithimages, #companies, .buttons, footer, footer div {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin-left: 0px;
+        }
+}
+@media (width <= 375px) {
+.desktop-break {
+    display: none;
+  }
+  .mobile-break {
+    display: inline;
+  }
+}
+@media (width <= 375px) {
+    #card1 img, #phonetablet img, .buttons iOS, .buttons Mac {        
+        align-items: center;
+        width: 200px;
+    }
+}
+@media (width <= 375px) {
+    .iOS, .Mac {        
+        padding: 9px 50px;
+}
+}
+@media (width <= 375px) {
+    #companies, footer div, #links {        
+        align-items: center;
+        gap: 0;
+    }
+}
+@media (width <= 375px) {
+    #companies img {        
+        width: 20%;
+}
+}
+
+@media (width <= 375px) {
+    .titles3, .description3 {        
+        text-align: center;
+        justify-content: center;
+        width: 200px;
+    }
+}
+
+@media (width <= 375px) {
+    #socialMedia {        
+        flex-direction: row;
+    }
 }
