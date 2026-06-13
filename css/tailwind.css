@@ -1,0 +1,5 @@
+@Layer components {
+    .box {
+        @apply w-[50px] h-[50px] rounded bg-blue-200 min-[900px]:bg-red-400
+    }
+}

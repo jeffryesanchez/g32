@@ -166,11 +166,15 @@ h3 {
 #phonetablet {
     margin-top: 5px;
     margin-bottom: 50px;
+    max-width: 550px;
+    width: 80%;
 }
 
 #featureswithimages {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin: auto;
     margin-top: -15px;
@@ -210,6 +214,8 @@ h3 {
 #companies {
     display: flex;
     width: 100%;
+    max-width: 1000px;
+    flex-wrap: wrap;
     height: 40px;
     gap: 65px;
     margin-top: 50px;
@@ -219,7 +225,7 @@ h3 {
 }
 
 #companies img {
-    width: 7%;
+    width: 10%;
     aspect-ratio: 3/2;
     object-fit: contain;
 }
@@ -230,10 +236,12 @@ h3 {
 
 footer {
     width: 100%;
-    height: 95px;
     background-color: #F5F6F8;
     display: flex;
     margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
 }
 
 #logo2 {
@@ -244,10 +252,10 @@ footer {
 }
 
 #links {
-    width: 410px;
     display: flex;
     height: 95px;
     gap: 55px;
+    flex-wrap: wrap;
 }
 
 .hyperlinks {
@@ -258,6 +266,7 @@ footer {
     font-size: 10px;
     text-align: left;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .hyperlinks a {
@@ -279,11 +288,12 @@ footer .hyperlinks:nth-child(3){
     justify-content: center;
     align-items: center;
     width: 300px;
-    gap: 12px;
 }
-
-#socialMedia a:hover img {
-    filter:#59BDAA;
+footer svg {
+    transform:scale(0.5);
+}
+#socialMedia a svg:hover path {
+  fill: #59BDAA;
 }
 .desktop-break {
   display: inline;
@@ -339,7 +349,11 @@ footer .hyperlinks:nth-child(3){
         width: 200px;
     }
 }
-
+@media (width <= 375px) {
+    #links {
+    flex-direction: column;
+    }
+    }
 @media (width <= 375px) {
     #socialMedia {        
         flex-direction: row;
